@@ -30,132 +30,165 @@
 
     <!-- Script that renders the resume -->
     <script type="text/babel">
+
+        function Contact(props){
+            return (
+                <section className="contact section-style">
+                    <h3 className="contact-h3 h3-style">
+                        Contact
+                    </h3>
+                    <address className="contact-address address-style">
+                        <p>{props.name}</p>
+                        <p>Email: <a href="mailto:raujla0228@gmail.com">raujla0228@gmail.com</a></p>
+                        <p>Phone: <a href="tel:+13179979097">1 (317) 997-9097</a></p>
+                        <p>Address: 7133 Foxthorn Dr, Canton, MI 48187</p>
+                    </address>
+                    <img src="img/raman.jpeg" alt="Raman Aujla Portrait" />
+                </section>
+            );
+        }
+
+        function Education(){
+            return (
+                <section className="education section-style">
+                    <h3 className="edu-h3 h3-style">
+                        Education
+                    </h3>
+                    <div className="edu">
+                        <h5 className="edu-h5 h5-style">
+                            <span className="edu-title edu-h5-span">Computer System Operation and Management</span>
+                            <span className="edu-dates edu-h5-span">Jan 2008 - Dec 2011</span>
+                        </h5>
+                        <p className="edu-p p-style">
+                            Diploma, Thompson Rivers University, Kamloops, BC, Canada
+                        </p>
+                    </div>
+                    <div className="edu">
+                        <h5 className="edu-h5 h5-style">
+                            <span className="edu-title edu-h5-span">Full Stack Web Development</span>
+                            <span className="edu-dates edu-h5-span">May 2013 - Present</span>
+                        </h5>
+                        <p className="edu-p p-style">
+                            Online Bootcamp, Thinkful
+                        </p>
+                    </div>
+                </section>  
+            );
+        }
+
+        function Experience(){
+            return (
+                <section className="exps section-style">
+                    <h3 className="exp-h3 h3-style">
+                        Experience
+                    </h3>
+                    <div className="exp">
+                        <h5 className="exp-h5 h5-style">
+                            <span className="exp-title exp-h5-span">Transportation Supervisor</span>
+                            <span className="exp-dates exp-h5-span">Jan 2012 - Apr 2015</span>
+                        </h5>
+                        <h5 className="exp-company-name-h5">
+                            Aujla Star Heavy and Light Trucks Transport, LLC, Dubai, U.A.E.
+                        </h5>
+                        <p className="exp-p p-style">
+                            Responsible for daily load planning for drivers where I managed the company payroll and shipment
+                            management systems. Worked with a team of 90 drivers. Working at this position taught me
+                            leadership skills in order to manage my team to complete large tasks in a timely manner.
+                        </p>
+                    </div>
+                    <div className="exp">
+                        <h5 className="exp-h5 h5-style">
+                            <span className="exp-title exp-h5-span">Operations Manager</span>
+                            <span className="exp-dates exp-h5-span">May 2015 - Present</span>
+                        </h5>
+                        <h5 className="exp-company-name-h5">
+                            Aujla Star Transport LLC, Indianapolis, IN 
+                        </h5>
+                        <p className="exp-p p-style">
+                            Responsible for establishing sister company Aujla Star Transport originally based in Dubai, U.A.E.
+                            Handled all major operations varying from dispatch, hiring and payroll. Handled driver/broker phone
+                            calls and resolved any issues that arose while on and off duty strengthening my customer service and
+                            communication skills.
+                        </p>
+                    </div>
+                </section>
+            );
+        }
+
+        function Projects(){
+            return (
+                <section className="projects section-style">
+                    <h3 className="projects-h3 h3-style">
+                        Projects
+                    </h3>
+                    <div className="project">
+                        <h5 className="project-h5 h5-style">
+                            Xplore Recipe App
+                        </h5>
+                        <p className="project-p p-style">
+                            An asynchronous web app that allows a user to browse through recipes using the Edamam API, which
+                            has a database of 1.7+ million nutritionally analyzed recipes. A user gets detailed nutritional
+                            information on a recipe and it has a grocery list feature where the user can add his own items or
+                            ingredients from a recipe to the list.
+                        </p>
+                    </div>
+                    <div className="project">
+                        <h5 className="project-h5 h5-style">
+                            National Parks App
+                        </h5>
+                        <p className="project-p p-style">
+                            An asynchronous app allowing users to search through parks in multiple states of the US. This app
+                            uses the National Parks API.
+                        </p>
+                    </div>
+                    <div className="project">
+                        <h5 className="project-h5 h5-style">
+                            Quiz App
+                        </h5>
+                        <p className="project-p p-style">
+                            A jQuery based web app that prompts the user with 5 questions and keeps track of the question
+                            number and the score of the user and displays the result once the test is over.
+                        </p>
+                    </div>
+                </section>
+            );
+        }
+
+
+        function ProfessionalSummary(){
+            return (
+                <section className="pro-summary section-style">
+                    <h3 className="prof-summary-h3 h3-style">
+                        Professional Summary
+                    </h3>
+                    <p className="prof-summary-p p-style">
+                        A dedicated and focused professional who excels at prioritizing, completing multiple tasks
+                        simultaneously and following through to achieve project goals. Seeking a job as a front-end developer
+                        in a company.
+                    </p>
+                </section>
+            );
+        }
+
+        function Header(props){
+            return (
+                <header className="">
+                    <h1>
+                        {props.name}'s Resume
+                    </h1>
+                </header>
+            );
+        }
+
         function App(props){
             return (
                 <main className="container">
-                    <header className="">
-                        <h1>
-                            {props.name}'s Resume
-                        </h1>
-                    </header>
-
-                    <section className="pro-summary section-style">
-                        <h3 className="prof-summary-h3 h3-style">
-                            Professional Summary
-                        </h3>
-                        <p className="prof-summary-p p-style">
-                            A dedicated and focused professional who excels at prioritizing, completing multiple tasks
-                            simultaneously and following through to achieve project goals. Seeking a job as a front-end developer
-                            in a company.
-                        </p>
-                    </section>
-                    
-                    <section className="projects section-style">
-                        <h3 className="projects-h3 h3-style">
-                            Projects
-                        </h3>
-                        <div className="project">
-                            <h5 className="project-h5 h5-style">
-                                Xplore Recipe App
-                            </h5>
-                            <p className="project-p p-style">
-                                An asynchronous web app that allows a user to browse through recipes using the Edamam API, which
-                                has a database of 1.7+ million nutritionally analyzed recipes. A user gets detailed nutritional
-                                information on a recipe and it has a grocery list feature where the user can add his own items or
-                                ingredients from a recipe to the list.
-                            </p>
-                        </div>
-                        <div className="project">
-                            <h5 className="project-h5 h5-style">
-                                National Parks App
-                            </h5>
-                            <p className="project-p p-style">
-                                An asynchronous app allowing users to search through parks in multiple states of the US. This app
-                                uses the National Parks API.
-                            </p>
-                        </div>
-                        <div className="project">
-                            <h5 className="project-h5 h5-style">
-                                Quiz App
-                            </h5>
-                            <p className="project-p p-style">
-                                A jQuery based web app that prompts the user with 5 questions and keeps track of the question
-                                number and the score of the user and displays the result once the test is over.
-                            </p>
-                        </div>
-                    </section>
-
-                    <section className="exps section-style">
-                        <h3 className="exp-h3 h3-style">
-                            Experience
-                        </h3>
-                        <div className="exp">
-                            <h5 className="exp-h5 h5-style">
-                                <span className="exp-title exp-h5-span">Transportation Supervisor</span>
-                                <span className="exp-dates exp-h5-span">January 2012 - April 2015</span>
-                            </h5>
-                            <h5 className="exp-company-name-h5">
-                                Aujla Star Heavy and Light Trucks Transport, LLC, Dubai, U.A.E.
-                            </h5>
-                            <p className="exp-p p-style">
-                                Responsible for daily load planning for drivers where I managed the company payroll and shipment
-                                management systems. Worked with a team of 90 drivers. Working at this position taught me
-                                leadership skills in order to manage my team to complete large tasks in a timely manner.
-                            </p>
-                        </div>
-                        <div className="exp">
-                            <h5 className="exp-h5 h5-style">
-                                <span className="exp-title exp-h5-span">Operations Manager</span>
-                                <span className="exp-dates exp-h5-span">May 2015 - Present</span>
-                            </h5>
-                            <h5 className="exp-company-name-h5">
-                                Aujla Star Transport LLC, Indianapolis, IN 
-                            </h5>
-                            <p className="exp-p p-style">
-                                Responsible for establishing sister company Aujla Star Transport originally based in Dubai, U.A.E.
-                                Handled all major operations varying from dispatch, hiring and payroll. Handled driver/broker phone
-                                calls and resolved any issues that arose while on and off duty strengthening my customer service and
-                                communication skills.
-                            </p>
-                        </div>
-                    </section>
-
-                    <section className="education section-style">
-                        <h3 className="edu-h3 h3-style">
-                            Education
-                        </h3>
-                        <div className="edu">
-                            <h5 className="edu-h5 h5-style">
-                                <span className="edu-title edu-h5-span">Computer System Operation and Management</span>
-                                <span className="edu-dates edu-h5-span">January 2008 - Dec 2011</span>
-                            </h5>
-                            <p className="edu-p p-style">
-                                Diploma, Thompson Rivers University, Kamloops, BC, Canada
-                            </p>
-                        </div>
-                        <div className="edu">
-                            <h5 className="edu-h5 h5-style">
-                                <span className="edu-title edu-h5-span">Full Stack Web Development</span>
-                                <span className="edu-dates edu-h5-span">May 2013 - Present</span>
-                            </h5>
-                            <p className="edu-p p-style">
-                                Online Bootcamp, Thinkful
-                            </p>
-                        </div>
-                    </section>
-
-                    <section className="contact section-style">
-                        <h3 className="contact-h3 h3-style">
-                            Contact
-                        </h3>
-                        <address className="contact-address address-style">
-                            <p>{props.name}</p>
-                            <p>Email: <a href="mailto:raujla0228@gmail.com">raujla0228@gmail.com</a></p>
-                            <p>Phone: <a href="tel:+13179979097">1 (317) 997-9097</a></p>
-                            <p>Address: 7133 Foxthorn Dr, Canton, MI 48187</p>
-                        </address>
-                        <img src="img/raman.jpeg" alt="Raman Aujla Portrait" />
-                    </section>
+                    <Header name={props.name} />
+                    <ProfessionalSummary />
+                    <Projects />
+                    <Experience />
+                    <Education />
+                    <Contact name={props.name}/>
                 </main>
             );
         }
