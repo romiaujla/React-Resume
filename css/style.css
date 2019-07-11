@@ -12,11 +12,16 @@ input, div, header, img, address{
     margin: 0;
 }
 
+body{
+    background: snow;
+}
+
 #application-root{
-    padding: 40px;
+    padding: 30px 10px;
 }
 
 .container{
+    background: white;
     max-width: 1000px;
     margin: auto;
     padding: 30px;
@@ -52,5 +57,5 @@ header h1{
     font-size: .8em;
 }
 .project{
-    padding: 5px 0px;
+    padding: 10px 0px;
 }
