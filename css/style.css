@@ -31,3 +31,26 @@ header h1{
     text-transform: uppercase;
     letter-spacing: .1em;
 }
+
+.section-style{
+    padding: 20px;
+}
+
+.h3-style, .h5-style{
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.h3-style{
+    margin-bottom: 10px;
+}
+.h5-style{
+    margin-bottom: 3px;
+}
+.p-style{
+    letter-spacing: .07em;
+    line-height: 1.5em;
+    font-size: .8em;
+}
+.project{
+    padding: 5px 0px;
+}
