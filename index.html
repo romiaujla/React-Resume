@@ -43,7 +43,7 @@
                         <h3 className="prof-summary-h3 h3-style">
                             Professional Summary
                         </h3>
-                        <p class="prof-summary-p p-style">
+                        <p className="prof-summary-p p-style">
                             A dedicated and focused professional who excels at prioritizing, completing multiple tasks
                             simultaneously and following through to achieve project goals. Seeking a job as a front-end developer
                             in a company.
@@ -145,9 +145,16 @@
                     </section>
 
                     <section className="contact section-style">
-                        <address>
+                        <h3 className="contact-h3 h3-style">
+                            Contact
+                        </h3>
+                        <address className="contact-address address-style">
+                            <p>{props.name}</p>
+                            <p>Email: <a href="mailto:raujla0228@gmail.com">raujla0228@gmail.com</a></p>
+                            <p>Phone: <a href="tel:+13179979097">1 (317) 997-9097</a></p>
+                            <p>Address: 7133 Foxthorn Dr, Canton, MI 48187</p>
                         </address>
-                        <img src="img/" alt="Raman Aujla Portrait">
+                        <img src="img/raman.jpeg" alt="Raman Aujla Portrait" />
                     </section>
                 </main>
             );
