@@ -5,7 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
     <title>Raman Aujla | Resume</title>
+    
+    <!-- Montserrat Font -->
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap" rel="stylesheet">
+    <!-- Custom Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -24,7 +30,24 @@
 
     <!-- Script that renders the resume -->
     <script type="text/babel">
-        
+        function App(props){
+            return (
+                <main className="container">
+                    <header className="">
+                        <h1>
+                            {props.name}'s Resume
+                        </h1>
+                    </header>
+
+                    <section className="professional-summary">
+                        
+                    </section>
+                </main>
+            );
+        }
+
+        ReactDOM.render(<App name="Raman Aujla" />, document.querySelector('#application-root'));
+
     </script>
 
 </body>

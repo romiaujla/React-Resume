@@ -1,0 +1,33 @@
+*{
+    box-sizing: border-box;
+    font-family: sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body, p, h1, h2, h3, h4, h5, h6,
+ul, li, a, button, form, fieldset, legend,
+input, div, header, img, address{
+    padding: 0;
+    margin: 0;
+}
+
+#application-root{
+    padding: 40px;
+}
+
+.container{
+    max-width: 1000px;
+    margin: auto;
+    padding: 30px;
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+}
+
+header h1{
+    text-align: center;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: .1em;
+}
